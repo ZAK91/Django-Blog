@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import post ,Author
+from .models import Post ,Author
 
 class PostAdmin(admin.ModelAdmin):
     list_display=['title' ,'author','publish_date']
@@ -9,5 +9,5 @@ class PostAdmin(admin.ModelAdmin):
     search_fields= ['title','content']
 
 
-admin.site.register(post)
+admin.site.register(Post)
 admin.site.register(Author)
